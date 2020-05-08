@@ -3,7 +3,7 @@
 
 !Important: the API used in this project is a 14-day free trial version. After the period of 14 days the main functionality of the tool will expire and therefore not work properly.
 
-### Available live deployment here:
+### Available live deployment here: https://res-review-nlp.herokuapp.com/ (Still working on making Client library work for the deployment)
 
 
 ## About project:
