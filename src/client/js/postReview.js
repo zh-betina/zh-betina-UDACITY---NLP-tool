@@ -1,6 +1,6 @@
 import { sortData } from './sortData.js';
 
-const postReview = async (url = "http://localhost:8081/sendReview", data = {})=>{
+const postReview = async (url = "/sendReview", data = {})=>{
   const response = await fetch(url, {
     method: 'POST',
     mode: 'cors',
