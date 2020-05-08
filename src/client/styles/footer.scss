@@ -1,0 +1,8 @@
+$font-color: grey;
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: $font-color;
+}

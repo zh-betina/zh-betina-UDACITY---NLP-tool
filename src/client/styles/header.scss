@@ -1,0 +1,21 @@
+$window-color: rgba(0,0,0,0.8);
+$font-color: white;
+$border: 1px solid black;
+
+header {
+  border: $border;
+  border-radius: 0.5rem;
+  background-color: $window-color;
+  width: 55vw;
+  max-width: 80vw;
+  height: 15vh;
+  margin-top: 4vh;
+  z-index: 3;
+  align-self: center;
+}
+
+h1 {
+
+  color: $font-color;
+  text-align: center;
+}

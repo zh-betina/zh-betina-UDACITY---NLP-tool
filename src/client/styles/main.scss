@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  grid-template:
+  "aside header header"
+  "aside main main"
+  "aside footer footer"
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}

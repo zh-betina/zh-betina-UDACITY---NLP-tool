@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NLP - Evaluation Tool</title>
+    <link rel="stylesheet" type="text/css" href="/home/betina/Documents/Atom/UDEMY/Project4/src/client/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Reviews evaluation</h1>
+
+    </header>
+
+    <main>
+      <h2>Check the reviews</h2>
+      <form class="form" method="post" action="/sendReview">
+        <textarea type="text"
+                  name="review-input"
+                  id="review-input"
+                  placeholder="Paste the review for analysis right here">
+        </textarea>
+        <button id="button" type="button" name="button">Send for analysis</button>
+      </form>
+    </main>
+
+    <aside>
+      <ul>
+        <li><button>About<span class="fas fa-plus-circle"></span></button></li>
+        <li><button>Aylien<span class="fas fa-plus-circle"></span></button></li>
+      </ul>
+    </aside>
+
+    <footer>Used pics</footer>
+
+  <script type="text/javascript" src="../js/index.js" charset="utf-8"></script>
+  </body>
+</html>
