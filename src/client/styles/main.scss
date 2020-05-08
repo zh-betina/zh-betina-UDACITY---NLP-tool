@@ -1,23 +1,65 @@
-body {
-  display: grid;
-  grid-template:
-  "aside header header"
-  "aside main main"
-  "aside footer footer"
-}
-
-header {
-  grid-area: header;
-}
-
-aside {
-  grid-area: aside;
-}
+$window-color: rgba(0,0,0,0.8);
+$btn-color: rgb(0,0,0);
+$font-color: #875E5E;
+$border: 1px solid white;
 
 main {
-  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80vw;
+  max-width: 80vw;
+  height: 80vh;
+  margin-top: -8vh;
+  border: $border;
+  z-index: 2;
 }
 
-footer {
-  grid-area: footer;
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 15vh 20vw auto 20vw;
+}
+
+#button {
+  align-self: center;
+  background-color: $btn-color;
+  color: white;
+  padding: 0.2rem;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: grey;
+  font-weight: 900;
+}
+
+#review-input {
+  background-color: $window-color;
+  height: 35vh;
+  border: none;
+  border-radius: 2%;
+  padding: 1%;
+  font-size: 1.3rem;
+  color: white;
+}
+
+hr {
+  color: white;
+  height: 1px;
+  width: 75vw;
+}
+
+.fas,
+.far {
+  padding-right: 0.2vw;
+}
+
+#results {
+  align-self: center;
+  background-color: $window-color;
+  margin-bottom: 1vh;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
 }

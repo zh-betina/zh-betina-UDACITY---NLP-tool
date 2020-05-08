@@ -6,6 +6,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 const dotenv = require('dotenv');
 dotenv.config();
+const path = require('path');
 //aylien API
 const AYLIENTextAPI = require('aylien_textapi');
 const textapi = new AYLIENTextAPI({
@@ -14,13 +15,13 @@ const textapi = new AYLIENTextAPI({
 });
 const cors = require('cors');
 app.use(cors());
-app.use(express.static('../client/'));
+app.use(express.static('dist'));
 
-app.listen(8000, ()=>{console.log("Running")});
+app.listen(8081, ()=>{console.log("Running")});
 
 
 app.get("/", (req, res)=>{
-  res.sendFile('/home/betina/Documents/Atom/UDEMY/Project4/src/client/views/index.html');
+  res.sendFile('dist/index.html');
 });
 
 let newResponse = [];
