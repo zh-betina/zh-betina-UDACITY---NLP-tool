@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
-import { postReview } from './postReview.js';
+import { postUrl } from './postUrl.js';
 
-describe('Test postReview fetch function', () => {
+describe('Test postUrl fetch function', () => {
   test('if it can fetch a response', async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const response = await res.json();

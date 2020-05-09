@@ -2,25 +2,29 @@ import { updateUI } from '../js/updateUI.js';
 
 test('The right elements were selected and UI updated accordingly', ()=>{
 
-  const positiveArray = ['food', 'menu'];
-  const negativeArray = ['value', 'staff'];
-  const neutralArray = ['drinks'];
+  document.body.innerHTML =  `<div id="results"></div>`;
 
-  document.body.innerHTML = `<div id="positive">
-  Positive aspects of yours business:
-  </div>
-  <div id="negative">
-  Aspects requiring improvement:
-  </div>
-  <div id="neutral">
-  Not great, not terrible:
-  </div>`;
+  const jsonReview = {
+    "apiData": {
+      "polarity": "negative",
+      "subjectivity": "unknown",
+      "polarity_confidence": "10",
+      "subjectivity_confidence": "8"
+    }
+  };
 
-  const positiveUI = document.getElementById('positive').innerHTML = `Positive aspects of yours business: ${positiveArray.join(` | `)}.`;
-  const negativeUI = document.getElementById('negative').innerHTML = `Aspects requiring improvement: ${negativeArray.join(` | `)}.`;
-  const neutralUI = document.getElementById('neutral').innerHTML = `Not great, not terrible: ${neutralArray.join(` | `)}.`;
+  document.getElementById('results').innerHTML = `<p id="polarity">Polarity: ${jsonReview.apiData.polarity}</p>
+  <p id="subjectivity">Subjectivity: ${jsonReview.apiData.subjectivity}</p>
+  <p id="pol-confidence">Polarity confidence: ${jsonReview.apiData.polarity_confidence}</p>
+  <p id="sub-confidence">Subjectivity confidence: ${jsonReview.apiData.subjectivity_confidence}</p>`;
 
-  expect(positiveUI).toMatch(/food | menu/);
-  expect(negativeUI).toMatch(/value | staff/);
-  expect(neutralUI).toMatch(/drinks/);
+  const polarity = document.getElementById('polarity').innerHTML;
+  const subject = document.getElementById('subjectivity').innerHTML;
+  const polConfid = document.getElementById('pol-confidence').innerHTML;
+  const subConfid = document.getElementById('sub-confidence').innerHTML;
+
+  expect(polarity).toMatch(/Polarity: negative/);
+  expect(subject).toMatch(/Subjectivity: unknown/);
+  expect(polConfid).toMatch(/Polarity confidence: 10/);
+  expect(subConfid).toMatch(/Subjectivity confidence: 8/);
 })

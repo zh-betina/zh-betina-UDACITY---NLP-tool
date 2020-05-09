@@ -1,10 +1,11 @@
-import { sortData } from './sortData.js';
+import { postUrl } from './postUrl.js';
 
-function updateUI(positiveArray, negativeArray, neutralArray){
+function updateUI(jsonReview){
 
-  document.getElementById('positive').innerHTML = `<span class="fas fa-star"></span>Positive aspects of yours business: ${positiveArray.join(`, `)}.`;
-  document.getElementById('negative').innerHTML = `<span class="far fa-star"></span>Aspects requiring improvement: ${negativeArray.join(`, `)}.`;
-  document.getElementById('neutral').innerHTML = `<span class="fas fa-star-half-alt"></span>Not great, not terrible: ${neutralArray.join(`, `)}.`;
+  document.getElementById('results').innerHTML = `<p>Polarity: ${jsonReview.apiData.polarity}</p>
+  <p>Subjectivity: ${jsonReview.apiData.subjectivity}</p>
+  <p>Polarity confidence: ${jsonReview.apiData.polarity_confidence}</p>
+  <p>Subjectivity confidence: ${jsonReview.apiData.subjectivity_confidence}</p>`;
 
 };
 

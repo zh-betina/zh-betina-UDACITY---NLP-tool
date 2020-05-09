@@ -1,7 +1,8 @@
-$window-color: rgba(0,0,0,0.8);
-$btn-color: rgb(0,0,0);
-$font-color: #875E5E;
-$border: 1px solid white;
+$window-color: rgba(255,255,255,0.4);
+$alert-color: rgba(194, 12, 12,0.4);
+$btn-color: rgb(255,255,255);
+$font-color: black;
+$border: 1px solid black;
 
 main {
   display: flex;
@@ -24,35 +25,40 @@ main {
 #button {
   align-self: center;
   background-color: $btn-color;
-  color: white;
+  color: $font-color;
   padding: 0.2rem;
   transition-duration: 0.4s;
+  font-size: 1.2rem;
 }
 
 #button:hover {
-  background-color: grey;
+  background-color: transparent;
   font-weight: 900;
 }
 
-#review-input {
+#url-input {
+  align-self: center;
   background-color: $window-color;
-  height: 35vh;
+  height: 7vh;
+  width: 50vw;
   border: none;
   border-radius: 2%;
+  margin-top: 20vh;
+  margin-bottom: 2vh;
   padding: 1%;
   font-size: 1.3rem;
-  color: white;
+  color: $font-color;
 }
 
 hr {
-  color: white;
+  color: $font-color;
   height: 1px;
   width: 75vw;
 }
 
-.fas,
-.far {
-  padding-right: 0.2vw;
+p {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 #results {
@@ -60,6 +66,21 @@ hr {
   background-color: $window-color;
   margin-bottom: 1vh;
   padding: 0.2rem;
-  color: white;
+  color: $font-color;
   border-radius: 1rem;
+}
+
+#alert-div {
+  background-color: $alert-color;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  align-self: center;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: -20vh;
+}
+
+.alert-text {
+  font-size: 0.8rem;
+  font-weight: 400;
 }

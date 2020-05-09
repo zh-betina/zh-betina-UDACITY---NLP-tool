@@ -1,6 +1,6 @@
-import { sortData } from './sortData.js';
+import { updateUI } from './updateUI.js';
 
-const postReview = async (url = "/sendReview", data = {})=>{
+const postUrl = async (url = "http://localhost:8081/sendUrl", data = {})=>{
   const response = await fetch(url, {
     method: 'POST',
     mode: 'cors',
@@ -13,11 +13,11 @@ const postReview = async (url = "/sendReview", data = {})=>{
   try{
     const jsonReview = await response.json();
     console.log(jsonReview);
-    sortData(jsonReview);
+    updateUI(jsonReview);
     return;
   }catch(error){
     console.log('While POSTing review to the server, a following error occured:', error);
   };
 };
 
-export { postReview };
+export { postUrl };
