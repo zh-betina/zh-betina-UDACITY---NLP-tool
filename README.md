@@ -1,13 +1,13 @@
-# UDACITY---NLP-evaluation-tool
-(**Restaurant Review Evaluator - NLP tool**)
+# UDACITY---NLP-tool
+(**News Article Evaluation- NLP tool**)
 
 !Important: the API used in this project is a 14-day free trial version. After the period of 14 days the main functionality of the tool will expire and therefore not work properly.
 
-### Available live deployment here: https://res-review-nlp.herokuapp.com/ (Still working on making Client library work for the deployment)
+### NOT UPDATED: Available live deployment here: https://res-review-nlp.herokuapp.com/
 
 
 ## About project:
-**Restaurant Review Evaluator-NLP tool** created for **Front End Developer Nanodegree** program of **Udacity**.
+**News Article Evaluation -NLP tool** created for **Front End Developer Nanodegree** program of **Udacity**.
 
 The main focus put on:
 * **Webpack 4** configurations for production and development modes and successful usage of both,
@@ -19,13 +19,13 @@ The main focus put on:
 
 ## Review evaluation:
 
-The tool takes as an input the feedback of a restaurant customer and with the **Aylien API Aspect-Based Sentiment Analysis** evaluates the positive, negative and neutral aspects that were directly or indirectly mentioned.
+The tool takes as an input the URL leading to a news article and the **Aylien API Sentiment Analysis** evaluates subjectivity, polarity and confidence rate for both of these.
 
-More: [Aylien API Aspect-Based Sentiment Analysis](https://docs.aylien.com/textapi/endpoints/#aspect-based-sentiment-analysis)
+More: [Aylien API Sentiment Analysis](https://docs.aylien.com/textapi/endpoints/#sentiment-analysis)
 
 ## Useful resources:
 
-- [Aylien Documentation](https://docs.aylien.com/textapi/endpoints/#aspect-based-sentiment-analysis),
+- [Aylien Documentation](https://docs.aylien.com/textapi/endpoints/#sentiment-analysis),
 - Jest Documentation in general but in particular:
   * [Webpack](https://jestjs.io/docs/en/webpack),
   * [Testing Asynchronious Code](https://jestjs.io/docs/en/asynchronous),
@@ -37,4 +37,5 @@ More: [Aylien API Aspect-Based Sentiment Analysis](https://docs.aylien.com/texta
 
 - [ ] Responsiveness. At the moment the tool is not mobile-screen-friendly.
 - [ ] API used in this project will be replaced by another free NLP API for further learning purposes and to make the tool main functionality available.
+- [ ] The live deployment is not up to date. Major changes were introduced and not pushed to the remote Heroku repository.
 - [ ] Design.
