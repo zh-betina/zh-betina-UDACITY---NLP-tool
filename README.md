@@ -1,9 +1,10 @@
-# UDACITY---NLP-tool
-(**News Article Evaluation- NLP tool**)
+# NLP-tool
+(News Article Evaluation- NLP tool)
 
-!Important: the API used in this project is a 14-day free trial version. After the period of 14 days the main functionality of the tool will expire and therefore not work properly.
+Used: Node.js, JavaScript, HTML, npm, babel, Jest, REST API communication, Express.js, Webpack4, Aylien API<br>
+**NOT AVAILABLE FOR LIVE PREVIEW DUE TO THE TRIAL ACCESS TO THE NLP API EXPIRATION**<br>
+**Important: the API used in this project is a 14-day free trial version. After the period of 14 days the main functionality of the tool will expire and therefore not work properly.**
 
-### NOT UPDATED: Available live deployment here: https://res-review-nlp.herokuapp.com/
 
 
 ## About project:
